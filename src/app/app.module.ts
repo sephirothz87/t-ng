@@ -10,6 +10,8 @@ import { TC1Component } from './t-c-1/t-c-1.component';
 import {HeroService} from "./hero.service";
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -18,11 +20,13 @@ import { MessageService } from './message.service';
     HeroesComponent,
     HeroDetailComponent,
     TC1Component,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [HeroService, MessageService],
   bootstrap: [AppComponent]
